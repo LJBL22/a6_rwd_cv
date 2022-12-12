@@ -152,6 +152,11 @@ hr {
     justify-content: space-between;
   }
 
+  section.experiences {
+    /* hr 呈現 */
+    flex-direction: column;
+  }
+
   h2 {
     width: 100%;
   }
@@ -181,12 +186,15 @@ hr {
   }
 
   section.experiences {
+    flex-direction: row;
     justify-content: space-between;
   }
 
   .experience-item {
     width: 31%;
+    border-top: 1px solid #999999;
+    padding-top: 16px;
   }
 }
 
-/* hr 的處理 */
+/* hr 處理 mid 部分，large 為 layout 又增加了一條，因此選擇忽略 hr；改在experience-item 上方加 border  */
