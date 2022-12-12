@@ -135,10 +135,21 @@ hr {
 }
 
 @media screen and (min-width: 576px) {
+
+  nav,
+  main {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
   section {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+  }
+
+  section.skills {
+    justify-content: space-between;
   }
 
   h2 {
@@ -146,25 +157,34 @@ hr {
   }
 
   .skill {
-    width: 33%;
+    width: 31%;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  main {
+
+  main,
+  nav {
+    max-width: 1200px;
     flex-flow: row wrap;
   }
 
   .wrapper {
-    width: 75%
+    width: 71%;
+    margin-left: 30px;
   }
 
   section.personal-info {
     flex: 1;
     flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  section.experiences {
+    justify-content: space-between;
   }
 
   .experience-item {
-    width: 33%;
+    width: 31%;
   }
 }
