@@ -165,7 +165,7 @@ hr {
 
   main,
   nav {
-    max-width: 1200px;
+    max-width: 1304px;
     flex-flow: row wrap;
   }
 
@@ -188,3 +188,5 @@ hr {
     width: 31%;
   }
 }
+
+/* hr 的處理 */
